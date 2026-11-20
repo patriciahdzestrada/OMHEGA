@@ -29,6 +29,7 @@ pipeline {
                     mkdir -p reports
 
                     docker run --rm \
+                    -e PYTHONPATH=/app/src \
                     -v "${WORKSPACE}/reports:/app/reports" \
                     omhega:${BUILD_NUMBER} \
                     python -m pytest -v \
