@@ -6,3 +6,4 @@ scikit-learn
 rdkit==2026.9.2
 pillow==13.0.0
 jupyter
+pytest
